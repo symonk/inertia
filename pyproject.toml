@@ -1,0 +1,17 @@
+
+[tool.poetry]
+name = "inertia"
+version = "0.1.0"
+description = "A python automation framework for modern web applications"
+authors = ["symonk <jackofspaces@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+playwright = "1.24.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "7.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
