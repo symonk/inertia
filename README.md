@@ -1,4 +1,4 @@
-![Inertia](.github/images/logo.png =1200x550)
+<img src=".github/images/logo.png" width="1200" height="450")
 
 ![version](https://img.shields.io/pypi/v/inertia?color=%2342f54b&label=asserto&style=flat-square)
 [![codecov](https://codecov.io/gh/symonk/inertia/branch/main/graph/badge.svg)](https://codecov.io/gh/symonk/inertia)
