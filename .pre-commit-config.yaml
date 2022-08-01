@@ -1,7 +1,7 @@
 exclude: ^(.tox|doc|ci/templates|)(/|$)
 repos:
   - repo: https://github.com/ambv/black
-    rev: ca0dbb8fa6cca8c1fc2650cde9e71402c03a3324
+    rev: b776bf92adb7f47cd92f550e33c2db445d226f78
     hooks:
       - id: black
         args:
@@ -30,7 +30,7 @@ repos:
       - id: mypy
         files: inertia/
   - repo: https://github.com/PyCQA/flake8
-    rev: 5.0.0
+    rev: 5.0.2
     hooks:
       - id: flake8
         args: ["--max-line-length=120"]
