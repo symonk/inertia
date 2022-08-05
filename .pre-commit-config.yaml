@@ -1,7 +1,7 @@
 exclude: ^(.tox|doc|ci/templates|)(/|$)
 repos:
   - repo: https://github.com/ambv/black
-    rev: b776bf92adb7f47cd92f550e33c2db445d226f78
+    rev: 507234c47d39f5b1d8289cdd49994e03dd97bcb4
     hooks:
       - id: black
         args:
@@ -10,7 +10,7 @@ repos:
           - '--line-length=120'
         language_version: python3.10
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: 08b4be84be2d74173246b7c9b6c22212a6c15a2d
+    rev: 1697d0b133c0bbdd711e221279e65470685377fe
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -30,7 +30,7 @@ repos:
       - id: mypy
         files: inertia/
   - repo: https://github.com/PyCQA/flake8
-    rev: 5.0.2
+    rev: 5.0.4
     hooks:
       - id: flake8
         args: ["--max-line-length=120"]
