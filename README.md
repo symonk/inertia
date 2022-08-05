@@ -6,9 +6,9 @@
 
 ## Inertia:
 
-Inertia is python test automation framework built with the idea of reliably testing web applications from an
-integration and end to end perspective.  `Inertia` operates on top of the python playwright implementation and
-adds a lot of goodies, including a fully functional pytest plugin to get up and running quickly.
+`Inertia` is in very early alpha stages but the goal is to provide an easy to use, robust and flake free automation
+framework for modern web applications in python.  Inertia builds on top of microsofts `playwright` library and
+builds in some extra goodies.  Initially `Inertia` will be a synchronous API.
 
 >Inertia was developed using pytest as it's test runner and has a `pytest-inertia` plugin that exposes inertia
 >through a series of fixtures.  Inertia is suitable for any underlying test runner of course however some boilerplate
@@ -16,6 +16,9 @@ adds a lot of goodies, including a fully functional pytest plugin to get up and 
 
 The main features of inertia are (and will be):
 
-+ To be decided.
-+ To be decided 2.
-+ To be decided 3.
++ Batteries included test runner plugins (pytest etc).
++ Reliability as the #1 priority.
++ Scalable, distributed testing.
++ User friendly error messages.
++ Extensibility at the core.
++ Much more.
