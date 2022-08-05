@@ -1,18 +1,20 @@
 import pathlib
+import socketserver
 from http.server import SimpleHTTPRequestHandler
-from http.server import ThreadingHTTPServer
+
+FILES = pathlib.Path(__file__).absolute().parent.joinpath("pages")
 
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs) -> None:
-        # Todo: Absolute path to the parent pages dir.
-        super().__init__(*args, directory=str(pathlib.Path()), **kwargs)
+        super().__init__(*args, directory=str(FILES), **kwargs)
 
 
-class IntegrationTestWebServer(ThreadingHTTPServer):
-    """A simple http server that serves the /pages directory for use in tests.
-    Each test `session` receives its own web server instance on an ephemeral port
-    to allow execution of parallel testing.
-    """
+class IntegrationServer(socketserver.TCPServer):
+    """A Simple integration server that serves integration test content."""
 
-    ...
+    def __init__(self, *args, **kwargs):
+        super().__init__(server_address=("", 0), RequestHandlerClass=Handler, *args, **kwargs)
+
+    def __repr__(self) -> str:
+        return f"IntegrationServer(server_address={self.server_address})"
