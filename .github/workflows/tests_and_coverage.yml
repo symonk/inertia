@@ -87,6 +87,5 @@ jobs:
         if: "matrix.do_cov"
         uses: codecov/codecov-action@v2
         with:
-          flags: inertia unit tests
           fail_ci_if_error: true
           verbose: true
