@@ -4,6 +4,8 @@ name = "inertia"
 version = "0.1.0"
 description = "A python automation framework for modern web applications"
 authors = ["symonk <jackofspaces@gmail.com>"]
+exclude = ["integrations/"]
+include = ["inertia"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
