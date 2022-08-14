@@ -22,7 +22,7 @@ def dummy_page():
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as pw:
-        yield pw.chromium.launch(headless=False).new_page()
+        yield pw.chromium.launch().new_page()
 
 
 @pytest.fixture
