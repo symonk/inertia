@@ -18,7 +18,7 @@ class IntegrationServer(socketserver.TCPServer):
 
     @property
     def base_url(self) -> str:
-        return f"http://{self.server_address[0]}:{self.server_address[1]}"
+        return f"http://localhost:{self.server_address[1]}"
 
     def __repr__(self) -> str:
         return f"IntegrationServer(server_address={self.server_address})"
