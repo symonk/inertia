@@ -9,7 +9,7 @@ include = ["inertia"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-playwright = "1.24.1"
+playwright = "1.25.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "7.1.2"
