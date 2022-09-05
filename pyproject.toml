@@ -68,3 +68,7 @@ line-length = 120
 
 [tool.flake8]
 # flake8 does not currently support pyproject.toml (handle via pre-commit directly).
+
+[tool.towncrier]
+directory = "changelog"
+version = "0.1.0"
