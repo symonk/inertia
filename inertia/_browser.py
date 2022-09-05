@@ -7,3 +7,7 @@ class Inertia(PlaywrightContextManager):
     """Entry point for inertia."""
 
     ...
+
+
+class BrowserBuilder:
+    ...
