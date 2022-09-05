@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import subprocess
 import sys
 import typing
@@ -25,11 +24,11 @@ def poetry_update():
 
 
 def run_poetry_up():
-    return _run_command(("poetryup",))
+    return _run_command(("poetryup", "--latest"))
 
 
 def pre_commit_update():
-    return _run_command(("pre-commit", "autoupdate", "--bleeding-edge"))
+    return _run_command(("pre-commit", "autoupdate"))
 
 
 def commit_and_push():
