@@ -70,5 +70,5 @@ line-length = 120
 # flake8 does not currently support pyproject.toml (handle via pre-commit directly).
 
 [tool.towncrier]
+package = "inertia"
 directory = "changelog"
-version = "0.1.0"
