@@ -7,6 +7,9 @@ authors = ["symonk <jackofspaces@gmail.com>"]
 exclude = ["integrations/"]
 include = ["inertia"]
 
+[tool.poetry.scripts]
+inertia = "inertia.__main__:main"
+
 [tool.poetry.dependencies]
 python = "^3.8"
 playwright = "1.25.2"
