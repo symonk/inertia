@@ -139,7 +139,7 @@ docs = ["sphinx"]
 
 [[package]]
 name = "identify"
-version = "2.5.4"
+version = "2.5.5"
 description = "File identification library for Python"
 category = "dev"
 optional = false
@@ -260,7 +260,7 @@ i18n = ["babel (>=2.9.0)"]
 
 [[package]]
 name = "mkdocs-material"
-version = "8.4.2"
+version = "8.4.3"
 description = "Documentation that simply works"
 category = "dev"
 optional = false
@@ -672,7 +672,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "b3be1b8ce97304461c93aef5274eb3ea324d842a66414e8b36e62a006f96c7a2"
+content-hash = "8d6369b2ac7f78918d138eb3859a3234dadd71ea82b0f4f2568ac21fd1a8dbad"
 
 [metadata.files]
 attrs = [
