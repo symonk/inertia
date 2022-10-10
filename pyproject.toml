@@ -12,7 +12,7 @@ inertia = "inertia.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-playwright = "1.26.1"
+playwright = "1.27.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "7.1.3"
